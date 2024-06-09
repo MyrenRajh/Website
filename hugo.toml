@@ -36,24 +36,24 @@ paginate= 10
     tag      = "tags"
     series   = "series"
 
-[languages]
-    [languages.en]
-        title = "Myren Rajh"
-        # copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+# [languages]
+#     [languages.en]
+#         title = "Myren Rajh"
+#         # copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
         
-    [languages.en.params]
-        subtitle  = "MEng Mechanical Engineer"
-        readOtherPosts = "Read other posts"
-        keywords = ""
+#     [languages.en.params]
+#         subtitle  = "MEng Mechanical Engineer"
+#         readOtherPosts = "Read other posts"
+#         keywords = ""
     
-        [languages.en.params.logo]
-        logoText = "mechanical enginer"
-        logoHomeLink = "/Website"
+#         [languages.en.params.logo]
+#         logoText = "mechanical engineer"
+#         logoHomeLink = "/Website"
 
-            # or
-            #
-            # path = "/img/your-example-logo.svg"
-            # alt = "Your example logo alt text"
+#             # or
+#             #
+#             # path = "/img/your-example-logo.svg"
+#             # alt = "Your example logo alt text"
 
 [[menu.main]]
     identifier = "blog"
