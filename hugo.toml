@@ -2,7 +2,7 @@ baseURL = 'https://MyrenRajh.github.io/Website/'
 languageCode = 'en-us'
 title = 'Myren Rajh'
 theme = "hello-friend-ng"
-paginate= 10
+paginate = 10
 
 [params]
     author = "Myren Rajh"
@@ -11,6 +11,7 @@ paginate= 10
     description = "Personal website and information repository"
     keywords = "homepage"
     images = [""]
+    logoText = "mechanical engineer"
 
     dateform = "Jan 2, 2006"
     dateformShor = "Jan 2"
@@ -19,7 +20,7 @@ paginate= 10
 
     disableReadOtherPosts = false
     enableSharingButtons = true
-    enableGlobalLanguageMenu = true
+    enableGlobalLanguageMenu = false
 
     [[params.social]]
         icon = "github"
@@ -36,30 +37,13 @@ paginate= 10
     tag      = "tags"
     series   = "series"
 
-# [languages]
-#     [languages.en]
-#         title = "Myren Rajh"
-#         # copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-        
-#     [languages.en.params]
-#         subtitle  = "MEng Mechanical Engineer"
-#         readOtherPosts = "Read other posts"
-#         keywords = ""
-    
-#         [languages.en.params.logo]
-#         logoText = "mechanical engineer"
-#         logoHomeLink = "/Website"
+[menu]
+    [[menu.main]]
+        identifier = "posts"
+        name       = "Blogs"
+        url        = "/posts"
 
-#             # or
-#             #
-#             # path = "/img/your-example-logo.svg"
-#             # alt = "Your example logo alt text"
-
-[[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
-
-
-
-
+    [[menu.main]]
+        identifier = "about"
+        name       = "About Me"
+        url        = "/posts"
