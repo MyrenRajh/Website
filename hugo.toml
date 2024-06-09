@@ -1,3 +1,65 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://MyrenRajh.github.io/Website/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Myren Rajh'
+theme = "hello-friend-ng"
+paginate= 10
+
+[params]
+    author = "Myren Rajh"
+    homeSubtitle = "MEng Mechanical Engineer"
+
+    description = "Personal website and information repository"
+    keywords = "homepage"
+    images = [""]
+
+    dateform = "Jan 2, 2006"
+    dateformShor = "Jan 2"
+    dateformNum = "2006-01-02"
+    dateformNumTime = "2006-01-02 15:04"
+
+    disableReadOtherPosts = false
+    enableSharingButtons = true
+    enableGlobalLanguageMenu = true
+
+    [[params.social]]
+        icon = "github"
+        name = "GitHub"
+        url = "https://github.com/MyrenRajh"
+    
+    [[params.social]]
+        icon = "linkedin"
+        name = "LinkeiIn"
+        url = "https://www.linkedin.com/in/myrenrajh/"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+    [languages.en]
+        title = "Hello Friend NG"
+        keywords = ""
+        copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+        readOtherPosts = "Read other posts"
+    
+    [languages.en.params]
+        subtitle  = "A simple theme for Hugo"
+    
+        [languages.en.params.logo]
+        logoText = "hello friend ng"
+        logoHomeLink = "/"
+
+            # or
+            #
+            # path = "/img/your-example-logo.svg"
+            # alt = "Your example logo alt text"
+
+[[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+
+
+
+
