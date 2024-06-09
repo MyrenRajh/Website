@@ -5,45 +5,78 @@ theme = "hello-friend-ng"
 paginate = 10
 
 [params]
+    # Settings
     author = "Myren Rajh"
     homeSubtitle = "MEng Mechanical Engineer"
 
+    # Metadata for document head
     description = "Personal website and information repository"
     keywords = "homepage"
-    images = [""]
-    logoText = "mechanical engineer"
-
+    # images = [""]
+    
+    # Date fotmats
     dateform = "Jan 2, 2006"
     dateformShor = "Jan 2"
     dateformNum = "2006-01-02"
     dateformNumTime = "2006-01-02 15:04"
 
+    # Settings
     disableReadOtherPosts = false
     enableSharingButtons = true
     enableGlobalLanguageMenu = false
 
+    # Contact Info
+    github = "https://github.com/MyrenRajh"
+    email = "myrenrajh@gmail.com"
+    linkedin = "https://www.linkedin.com/in/myrenrajh/"
+
+
+    [params.footer]
+        author = true
+        topText = []
+        bottomText = [
+            "Personal website and information repository"
+        ]
+
+    [params.logo]
+        logoMark     = ">"
+        logoText = "mechanical engineer"
+        logoCursorColor    = "#00ff73"
+        path = "logo.svg"
+        alt = "mechanical engineer"
+
+    [params.portrait]
+        path     = "portrait.jpeg"
+        alt      = "Portrait"
+        maxWidth = "200px"
+
     [[params.social]]
-        icon = "github"
-        name = "GitHub"
-        url = "https://github.com/MyrenRajh"
-    
+        name = "email"
+        url  = "mailto:myrenrajh@gmail.com"
+        
     [[params.social]]
-        icon = "linkedin"
-        name = "LinkeiIn"
-        url = "https://www.linkedin.com/in/myrenrajh/"
+        name = "github"
+        url  = "https://github.com/MyrenRajh/"
+        
+    [[params.social]]
+        name = "linkedin"
+        url  = "https://www.linkedin.com/in/myrenrajh/"
+
+
+
+[menu]
+[[menu.main]]
+    identifier = "posts"
+    name       = "Blogs"
+    url        = "/posts"
+
+[[menu.main]]
+    identifier = "about"
+    name       = "About Me"
+    url        = "/posts"
+
 
 [taxonomies]
     category = "blog"
     tag      = "tags"
     series   = "series"
-
-[menu]
-    [[menu.main]]
-        identifier = "posts"
-        name       = "Blogs"
-        url        = "/posts"
-
-    [[menu.main]]
-        identifier = "about"
-        name       = "About Me"
-        url        = "/posts"
