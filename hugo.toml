@@ -48,7 +48,7 @@ paginate= 10
     
         [languages.en.params.logo]
         logoText = "mechanical enginer"
-        logoHomeLink = "/"
+        logoHomeLink = "/Website"
 
             # or
             #
