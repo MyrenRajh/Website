@@ -7,10 +7,10 @@ paginate = 10
 [params]
     # Settings
     author = "Myren Rajh"
-    homeSubtitle = "MEng Mechanical Engineer"
+    homeSubtitle = "MEng Mechanical Engineering Student"
 
     # Metadata for document head
-    description = "Personal website and information repository"
+    description = "Personal Website and Information Repository"
     keywords = "homepage"
     # images = [""]
     
@@ -40,10 +40,10 @@ paginate = 10
 
     [params.logo]
         logoMark     = ">"
-        logoText = "mechanical engineer"
+        logoText = "Myren Rajh"
         logoCursorColor    = "#00ff73"
-        path = "logo.svg"
-        alt = "mechanical engineer"
+        # path = "logo.svg"
+        alt = "Myren Rajh"
 
     [params.portrait]
         path     = "portrait.jpeg"
@@ -53,7 +53,7 @@ paginate = 10
     [[params.social]]
         name = "email"
         url  = "mailto:myrenrajh@gmail.com"
-        
+
     [[params.social]]
         name = "github"
         url  = "https://github.com/MyrenRajh/"
@@ -63,18 +63,16 @@ paginate = 10
         url  = "https://www.linkedin.com/in/myrenrajh/"
 
 
-
 [menu]
 [[menu.main]]
-    identifier = "posts"
-    name       = "Blogs"
-    url        = "/posts"
-
-[[menu.main]]
     identifier = "about"
-    name       = "About Me"
-    url        = "/posts"
+    name       = "About"
+    url        = "about/"
 
+# [[menu.main]]
+#     identifier = "Posts"
+#     name       = "Posts"
+#     url        = "/blog"
 
 [taxonomies]
     category = "blog"
