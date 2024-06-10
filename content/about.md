@@ -84,6 +84,7 @@ Worked as an Engineering assistant for an Electrical Engineer at Power Systems D
 
 Captured content into academic textbooks for high-school students using LaTeX.
 
+---
 
 
 ## Honours and Awards
