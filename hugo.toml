@@ -1,66 +1,554 @@
 baseURL = 'https://MyrenRajh.github.io/Website/'
 languageCode = 'en-us'
 title = 'Myren Rajh'
-theme = "hello-friend-ng"
+theme = "DoIt"
 paginate = 10
 
-[params]
-    # Settings
-    author = "Myren Rajh"
-    homeSubtitle = "MEng Mechanical Engineering Student"
+# [params]
+#     # Settings
+#     author = "Myren Rajh"
+#     homeSubtitle = "MEng Mechanical Engineering Student"
 
-    # Metadata for document head
-    description = "Personal Website and Information Repository"
-    keywords = "homepage"
-    # images = [""]
+#     # Metadata for document head
+#     description = "Personal Website and Information Repository"
+#     keywords = "homepage"
+#     # images = [""]
     
-    # Date fotmats
-    dateform = "Jan 2, 2006"
-    dateformShor = "Jan 2"
-    dateformNum = "2006-01-02"
-    dateformNumTime = "2006-01-02 15:04"
+#     # Date fotmats
+#     dateform = "Jan 2, 2006"
+#     dateformShor = "Jan 2"
+#     dateformNum = "2006-01-02"
+#     dateformNumTime = "2006-01-02 15:04"
 
-    # Settings
-    disableReadOtherPosts = false
-    enableSharingButtons = true
-    enableGlobalLanguageMenu = false
+#     # Settings
+#     disableReadOtherPosts = false
+#     enableSharingButtons = true
+#     enableGlobalLanguageMenu = false
 
-    # Contact Info
-    github = "https://github.com/MyrenRajh"
-    email = "myrenrajh@gmail.com"
-    linkedin = "https://www.linkedin.com/in/myrenrajh/"
+#     # Contact Info
+#     github = "https://github.com/MyrenRajh"
+#     email = "myrenrajh@gmail.com"
+#     linkedin = "https://www.linkedin.com/in/myrenrajh/"
 
 
-    [params.footer]
-        author = true
-        topText = []
-        bottomText = [
-            "Personal website and information repository"
-        ]
+#     [params.footer]
+#         author = true
+#         topText = []
+#         bottomText = [
+#             "Personal website and information repository"
+#         ]
 
-    [params.logo]
-        logoMark     = ">"
-        logoText = "Myren Rajh"
-        logoCursorColor    = "#00ff73"
-        # path = "logo.svg"
-        alt = "Myren Rajh"
+#     [params.logo]
+#         logoMark     = ">"
+#         logoText = "Myren Rajh"
+#         logoCursorColor    = "#00ff73"
+#         # path = "logo.svg"
+#         alt = "Myren Rajh"
 
-    [params.portrait]
-        path     = "portrait.jpeg"
-        alt      = "Portrait"
-        maxWidth = "200px"
+#     [params.portrait]
+#         path     = "portrait.jpeg"
+#         alt      = "Portrait"
+#         maxWidth = "200px"
 
-    [[params.social]]
-        name = "email"
-        url  = "mailto:myrenrajh@gmail.com"
+#     [[params.social]]
+#         name = "email"
+#         url  = "mailto:myrenrajh@gmail.com"
 
-    [[params.social]]
-        name = "github"
-        url  = "https://github.com/MyrenRajh/"
+#     [[params.social]]
+#         name = "github"
+#         url  = "https://github.com/MyrenRajh/"
         
-    [[params.social]]
-        name = "linkedin"
-        url  = "https://www.linkedin.com/in/myrenrajh/"
+#     [[params.social]]
+#         name = "linkedin"
+#         url  = "https://www.linkedin.com/in/myrenrajh/"
+
+
+# [menu]
+# [[menu.main]]
+#     identifier = "2_about"
+#     name       = "About"
+#     url        = "about/"
+
+# # [[menu.main]]
+# #     identifier = "Posts"
+# #     name       = "Posts"
+# #     url        = "/blog"
+
+# [taxonomies]
+#     category = "blog"
+#     tag      = "tags"
+#     series   = "series"
+
+[params]
+  title = "Myren Rajh"
+  description = "Myren Rajh"
+  keywords = ["Myren", "Rajh", "Mechanical", "Engineer", "CFD", "Deep Learning", "FEM"]
+  defaultTheme = "auto"
+  dateFormat = "2006-01-02"
+  images = ["portrait.jpeg"]
+  enablePWA = false
+  cacheRemoteImages = true
+  optimizeImages = true
+  srcsetSmallResizeMethod = "700x webp Lanczos q75"
+  srcsetDefaultResizeMethod = "1200x webp Lanczos q75"
+  srcsetLargeResizeMethod = "2000x webp Lanczos q75"
+
+  [params.app]
+    title = "Myren Rajh"
+    noFavicon = false
+    svgFavicon = ""
+    iconColor = "#5bbad5"
+    tileColor = "#da532c"
+
+  [params.search]
+    enable = true
+    type = "fuse"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+
+    [params.search.fuse]
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
+
+  [params.image]
+    cacheRemote = true
+    optimise = true
+
+  [params.header]
+    themeChangeMode = "select"
+
+    [params.header.title]
+      logo = ""
+      name = "Myren Rajh"
+      pre = ""
+      post = ""
+      typeit = false
+
+  [params.footer]
+    enable = true
+    custom = 'My Personal Website and Information Repository'
+    hugo = false
+    copyright = false
+    author = true
+    since = 2024
+
+  [params.section]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+    [params.section.recentlyUpdated]
+      enable = false
+      rss = false
+      days = 30
+      maxCount = 10
+
+  [params.list]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.home]
+    rss = 10
+
+    [params.home.profile]
+      enable = true
+      gravatarEmail = ""
+      avatarURL = "portrait.jpeg"
+      avatarLinkURL = ""
+      title = "Myren Rajh"
+      subtitle = "Personal Website"
+      typeit = true
+      social = true
+      disclaimer = ""
+
+    [params.home.posts]
+      enable = true
+      paginate = 6
+      defaultHiddenFromHomePage = false
+
+  [params.social]
+    GitHub = "https://github.com/MyrenRajh/"
+    Linkedin = "https://www.linkedin.com/in/myrenrajh/"
+    BuyMeACoffee = ""
+    Email = "myrenrajh@gmail.com"
+
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = false
+    ruby = true
+    fraction = true
+    linkToMarkdown = true
+    linkToSource = false
+    linkToEdit = false
+    linkToReport = false
+    rssFullText = false
+    seriesNavigation = true
+    enableLastMod = true
+    enableWordCount = true
+    enableReadingTime = true
+
+    [params.page.outdatedArticleReminder]
+      enable = false
+      reminder = 90
+      warning = 180
+
+    [params.page.toc]
+      enable = true
+      keepStatic = true
+      auto = true
+
+    [params.page.math]
+      enable = true
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      copyTex = true
+      mhchem = true
+      mathjax = false
+
+    [params.page.code]
+      maxShownLines = 10
+
+    [params.page.table]
+      sort = true
+
+    [params.page.mapbox]
+      accessToken = ""
+      lightStyle = "mapbox://styles/mapbox/light-v9"
+      darkStyle = "mapbox://styles/mapbox/dark-v9"
+      navigation = true
+      geolocate = true
+      scale = true
+      fullscreen = true
+
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = false
+      Linkedin = true
+      Whatsapp = false
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Digg = false
+      Stumbleupon = false
+      Flipboard = false
+      Weibo = false
+      Renren = false
+      Myspace = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Mix = false
+      Mastodon = false
+
+    [params.page.instantpage]
+      enable = false
+
+    [params.page.comment]
+      enable = true
+
+      [params.page.comment.disqus]
+        enable = false
+        shortname = ""
+
+      [params.page.comment.gitalk]
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+
+      [params.page.comment.valine]
+        enable = false
+        appId = ""
+        appKey = ""
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
+        emoji = ""
+
+      [params.page.comment.waline]
+        enable = false
+        serverURL = ""
+        pageview = true
+        comment = true
+
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        languageCode = ""
+
+      [params.page.comment.telegram]
+        enable = false
+        siteID = ""
+        limit = 5
+        height = ""
+        color = ""
+        colorful = true
+        dislikes = false
+        outlined = false
+        dark = false
+
+      [params.page.comment.commento]
+        enable = false
+
+      [params.page.comment.utterances]
+        enable = false
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+
+      [params.page.comment.twikoo]
+        enable = false
+        envId = ""
+        region = ""
+        path = ""
+        cloudbase = true # boolean : true / false. #If you deploy your Twikoo on CloudBase, set it to true.
+        visitor = true
+        commentCount = true
+
+      [params.page.comment.vssue]
+        enable = false
+        platform = "" # ("bitbucket", "gitea", "gitee", "github", "gitlab")
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+
+      [params.page.comment.remark42]
+        enable = false
+        host = ""
+        site_id = ""
+        max_shown_comments = 15
+        show_email_subscription = true
+        simple_view = false
+
+      [params.page.comment.giscus]
+        enable = false
+        dataRepo = ""
+        dataRepoId = ""
+        dataCategory = ""
+        dataCategoryId = ""
+        dataMapping = "pathname"
+        dataReactionsEnabled = "1"
+        dataEmitMetadata = "0"
+        dataInputPosition = "bottom"
+        lightTheme = "light"
+        darkTheme = "dark"
+        dataLang = "en"
+        dataLoading = "lazy"
+
+      [params.page.comment.artalk]
+        enable = false
+        server = ""
+        site = ""
+        lite = false
+        katex = false
+        lightbox = false
+        pageview = true
+        commentCount = true
+
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # DoIt NEW | 0.2.14 Enhance third-party library config
+        # [params.page.library.css.someOtherCSS]
+        #   src = "someOther.css"
+        #   defer = true
+        #   attr = "customAttribute"
+        # located in "assets/"
+        # Or
+        # someCSS = "https://cdn.example.com/some.css"
+      [params.page.library.js]
+        # someJavaScript = "some.js"
+        # DoIt NEW | 0.2.14 Enhance third-party library config
+        # [params.page.library.js.someOtherJavaScript]
+        #   src = "someOther.js"
+        #   defer = false
+        #   async = true
+        #   attr = "customAttribute"
+        # located in "assets/"
+        # Or
+        # someJavaScript = "https://cdn.example.com/some.js"
+
+    [params.page.seo]
+      images = []
+      # Publisher info
+      [params.page.seo.publisher]
+        name = ""
+        logoUrl = ""
+
+      [params.page.related]
+        enable = true
+        count = 5
+
+  [params.sponsor]
+    enable = false
+    bio = "If you find this post helpful, please consider sponsoring."
+    link = "https://www.buymeacoffee.com" # The link to your sponsor page
+    custom = "" # Custom HTML button
+
+  [params.typeit]
+    speed = 100
+    cursorSpeed = 1000
+    cursorChar = "|"
+    duration = -1
+
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+    so = "" # 360 search
+    sogou = ""
+
+  [params.seo]
+    image = ""
+    thumbnailUrl = ""
+    alternateName = ["Myren Rajh"]
+
+  [params.analytics]
+    enable = false
+    [params.analytics.google]
+      id = ""
+      anonymizeIP = true
+    [params.analytics.fathom]
+      id = ""
+      server = ""
+    [params.analytics.baidu]
+      id = ""
+    [params.analytics.umami]
+      data_website_id = ""
+      src = ""
+      data_host_url = ""
+      data_domains = ""
+    [params.analytics.plausible]
+      data_domain = ""
+      src = ""
+    [params.analytics.cloudflare]
+      token = ""
+
+  [params.cookieconsent]
+    enable = true
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+
+  [params.cdn]
+    data = ""
+
+  [params.compatibility]
+    polyfill = false
+    objectFit = false
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# # Author config
+# [author]
+#   name = "Myren Rajh"
+#   email = "myrenrajh@gmail.com"
+#   link = ""
+#   avatar = "/images/portrait.jpeg"
+#   gravatarEmail = ""
+
+# Sitemap config
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks config
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
+
+[privacy]
+  [privacy.googleAnalytics]
+    # ...
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
 
 
 [menu]
@@ -69,12 +557,14 @@ paginate = 10
     name       = "About"
     url        = "about/"
 
-# [[menu.main]]
-#     identifier = "Posts"
-#     name       = "Posts"
-#     url        = "/blog"
+[[menu.main]]
+    identifier = "Posts"
+    name       = "Posts"
+    url        = "/posts"
+
 
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+author = "authors"
+category = "categories"
+tag = "tags"
+series = "series"
