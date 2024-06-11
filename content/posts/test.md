@@ -3,6 +3,7 @@ title : 'Test'
 date : 2024-06-11T16:15:23+02:00
 draft : false
 authors : [Myren Rajh]
+description : 'A simple test post'
 ---
 
 # Hello World

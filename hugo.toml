@@ -184,8 +184,8 @@ paginate = 10
       defaultHiddenFromHomePage = false
 
   [params.social]
-    GitHub = "https://github.com/MyrenRajh/"
-    Linkedin = "https://www.linkedin.com/in/myrenrajh/"
+    GitHub = "MyrenRajh/"
+    Linkedin = "myrenrajh/"
     BuyMeACoffee = ""
     Email = "myrenrajh@gmail.com"
 
