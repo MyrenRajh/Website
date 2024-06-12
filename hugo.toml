@@ -96,7 +96,7 @@ paginate = 10
       enable = true
       gravatarEmail = ""
       avatarURL = "portrait.jpeg"
-      # avatarLinkURL = ""
+      avatarLinkURL = ""
       title = "Myren Rajh"
       subtitle = "Personal Website and Information Repository"
       typeit = true
@@ -371,7 +371,7 @@ paginate = 10
     sogou = ""
 
   [params.seo]
-    image = ""
+    image = "portrait.jpeg"
     thumbnailUrl = ""
     alternateName = ["Myren Rajh"]
 
