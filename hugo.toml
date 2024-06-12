@@ -4,81 +4,6 @@ title = 'Myren Rajh'
 theme = "DoIt"
 paginate = 10
 
-# [params]
-#     # Settings
-#     author = "Myren Rajh"
-#     homeSubtitle = "MEng Mechanical Engineering Student"
-
-#     # Metadata for document head
-#     description = "Personal Website and Information Repository"
-#     keywords = "homepage"
-#     # images = [""]
-    
-#     # Date fotmats
-#     dateform = "Jan 2, 2006"
-#     dateformShor = "Jan 2"
-#     dateformNum = "2006-01-02"
-#     dateformNumTime = "2006-01-02 15:04"
-
-#     # Settings
-#     disableReadOtherPosts = false
-#     enableSharingButtons = true
-#     enableGlobalLanguageMenu = false
-
-#     # Contact Info
-#     github = "https://github.com/MyrenRajh"
-#     email = "myrenrajh@gmail.com"
-#     linkedin = "https://www.linkedin.com/in/myrenrajh/"
-
-
-#     [params.footer]
-#         author = true
-#         topText = []
-#         bottomText = [
-#             "Personal website and information repository"
-#         ]
-
-#     [params.logo]
-#         logoMark     = ">"
-#         logoText = "Myren Rajh"
-#         logoCursorColor    = "#00ff73"
-#         # path = "logo.svg"
-#         alt = "Myren Rajh"
-
-#     [params.portrait]
-#         path     = "portrait.jpeg"
-#         alt      = "Portrait"
-#         maxWidth = "200px"
-
-#     [[params.social]]
-#         name = "email"
-#         url  = "mailto:myrenrajh@gmail.com"
-
-#     [[params.social]]
-#         name = "github"
-#         url  = "https://github.com/MyrenRajh/"
-        
-#     [[params.social]]
-#         name = "linkedin"
-#         url  = "https://www.linkedin.com/in/myrenrajh/"
-
-
-# [menu]
-# [[menu.main]]
-#     identifier = "2_about"
-#     name       = "About"
-#     url        = "about/"
-
-# # [[menu.main]]
-# #     identifier = "Posts"
-# #     name       = "Posts"
-# #     url        = "/blog"
-
-# [taxonomies]
-#     category = "blog"
-#     tag      = "tags"
-#     series   = "series"
-
 [params]
   title = "Myren Rajh"
   description = "Myren Rajh"
@@ -142,7 +67,7 @@ paginate = 10
 
   [params.footer]
     enable = true
-    custom = 'My Personal Website and Information Repository'
+    custom = 'Personal Website and Information Repository'
     hugo = false
     copyright = false
     author = true
@@ -173,13 +98,13 @@ paginate = 10
       avatarURL = "portrait.jpeg"
       avatarLinkURL = ""
       title = "Myren Rajh"
-      subtitle = "Personal Website"
+      subtitle = "Personal Website and Information Repository"
       typeit = true
       social = true
       disclaimer = ""
 
     [params.home.posts]
-      enable = true
+      enable = false
       paginate = 6
       defaultHiddenFromHomePage = false
 
@@ -433,7 +358,7 @@ paginate = 10
   [params.typeit]
     speed = 100
     cursorSpeed = 1000
-    cursorChar = "|"
+    cursorChar = "_"
     duration = -1
 
   [params.verification]
@@ -472,7 +397,7 @@ paginate = 10
       token = ""
 
   [params.cookieconsent]
-    enable = true
+    enable = false
     [params.cookieconsent.content]
       message = ""
       dismiss = ""
@@ -480,10 +405,6 @@ paginate = 10
 
   [params.cdn]
     data = ""
-
-  [params.compatibility]
-    polyfill = false
-    objectFit = false
 
 [markup]
   [markup.highlight]
@@ -513,7 +434,7 @@ paginate = 10
 #   name = "Myren Rajh"
 #   email = "myrenrajh@gmail.com"
 #   link = ""
-#   avatar = "portrait.jpeg"
+#   avatar = "portrait.webp"
 #   gravatarEmail = ""
 
 # Sitemap config
@@ -558,9 +479,14 @@ paginate = 10
     url        = "about/"
 
 [[menu.main]]
-    identifier = "Posts"
+    identifier = "posts"
     name       = "Posts"
     url        = "/posts"
+
+# [[menu.main]]
+#     identifier = "authors"
+#     name       = "Authors"
+#     url        = "/authors"
 
 
 [taxonomies]

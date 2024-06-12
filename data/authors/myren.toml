@@ -1,6 +1,5 @@
 name = "Myren Rajh"
 link = "https://myrenrajh.github.io/Website"
 email = "myrenrajh@gmail.com"
-avatar = "portrait.jpeg"
-# [zh-en]
-#     name = "Myren Rajh"
+avatar = "portrait.webp"
+gravatarEmail = ""
