@@ -372,7 +372,7 @@ paginate = 10
 
   [params.seo]
     image = "portrait.jpeg"
-    thumbnailUrl = ""
+    thumbnailUrl = "portrait.jpeg"
     alternateName = ["Myren Rajh"]
 
   [params.analytics]
@@ -433,9 +433,9 @@ paginate = 10
 # [author]
 #   name = "Myren Rajh"
 #   email = "myrenrajh@gmail.com"
-#   link = ""
-#   avatar = "portrait.webp"
-#   gravatarEmail = ""
+#   # link = ""
+#   avatar = "/images/portrait.jpeg"
+#   # gravatarEmail = ""
 
 # Sitemap config
 [sitemap]
