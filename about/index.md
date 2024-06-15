@@ -158,7 +158,7 @@ My undergraduate studies allowed me to gain experience in applying deep learning
 - LaTeX
 - Typst
 - MS Suite
-
+- Familiar with basic Linux shell usage
 
 
 ---
