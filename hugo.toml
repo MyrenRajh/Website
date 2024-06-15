@@ -201,7 +201,7 @@ paginate = 10
       enable = false
 
     [params.page.comment]
-      enable = true
+      enable = false
 
       [params.page.comment.disqus]
         enable = false
@@ -477,11 +477,19 @@ paginate = 10
     identifier = "about"
     name       = "About"
     url        = "about/"
+    weight     = 1
 
 [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "/posts"
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/project_showcase/"
+    weight     = 2
+
+# [[menu.main]]
+#     identifier = "posts"
+#     name       = "Posts"
+#     url        = "/posts"
+#     weight     = 3
 
 # [[menu.main]]
 #     identifier = "authors"
