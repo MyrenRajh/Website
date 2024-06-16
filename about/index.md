@@ -114,7 +114,7 @@ My undergraduate studies allowed me to gain experience in applying deep learning
 
 *Richards Bay, KwaZulu-Natal, South Africa*
 
-- Worked under the supervision of a Senior Reliability Engineer at South32 Hillside
+- Worked under the supervision of a Senior Reliability Engineer at South32 Hillside Aluminium
 - Helped developed maintenance plans and solutions for refurbishing under-maintained equipment such as molten liquid aluminium furnaces.
 - Assisted with the procurement of equipment of the Casthouse and Logistics departments
 
@@ -169,7 +169,7 @@ issued by *University of Pretoria* in *2023*
 - Achieved the best overall undergraduate academic results in the entire faculty of Engineering, Built environment and Information Technology (EBIT) of the University of Pretoria in the graduating class of 2023
 
 #### *Mechanical Engineering Faculty Top Achiever 2021*
-issued by *University of Pretoria* in *2023*
+issued by *University of Pretoria* in *2021*
 
 - Attained the position of overall top achiever in Mechanical Engineering at the University of Pretoria for 2021.
 
